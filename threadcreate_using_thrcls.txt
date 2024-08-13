@@ -1,0 +1,61 @@
+//JAVA PROGRAM TO CREATION OF THREAD USING THREAD CLASS
+
+class Mythread extends Thread{
+    
+public void run(){
+        
+try
+{
+            
+System.out.println("thread "+ Thread.currentThread().getId()+ "is running");
+        
+}
+        
+catch(Exception e)
+        
+{
+            
+System.out.println(e.getMessage());
+        
+}
+        
+}
+    
+}
+
+public class crthrd{
+    
+public static void main(String[] args)
+    
+{
+        
+int n=5;
+        
+for(int i=0;i<n;i++)
+        
+{
+        
+Mythread t=new Mythread();
+        
+t.start();
+        
+}
+    
+}
+
+}
+ 
+
+=========Output==========
+thread 12is running
+
+thread 10is running
+
+thread 14is running
+
+thread 13is running
+
+thread 11is running
+
+
+=== Code Execution Successful ===
