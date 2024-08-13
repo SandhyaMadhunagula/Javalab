@@ -1,0 +1,50 @@
+import java.util.*;
+
+class Armstr{
+    
+public static void main(String[] args)
+    
+{
+        
+Scanner sc=new Scanner(System.in);
+        
+System.out.println("enter a number:");
+        
+int num=sc.nextInt();
+        
+int sum=0, temp=num;
+        
+while(num>0){
+        
+int r=num%10;
+          
+num=num/10;
+         
+sum=sum+r*r*r;
+        
+}
+       
+System.out.println("number:"+temp);
+    
+System.out.println("sum:"+sum);
+    
+        
+if(temp==sum)
+        
+{
+             
+System.out.println("Given number is armstrong");
+        
+}
+        
+else
+        
+{
+             
+System.out.println("not an armstrong");
+        
+}
+        
+}
+    
+}
