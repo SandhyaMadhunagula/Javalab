@@ -1,0 +1,25 @@
+//JAVA PROGRAM TO CREATION OF THREAD USING RUNNABLE INTERFACE
+
+class Multithread implements Runnable{
+    
+public void run()
+{
+        
+System.out.println("Thread is running..");
+    
+}
+
+
+public static void main(String[] args)
+
+{
+    
+Multithread s=new Multithread();
+    
+Thread  t=new  Thread(s);
+    
+t.start();
+
+}
+
+}
