@@ -1,0 +1,89 @@
+public class StringBufferExample {
+    
+public static void main(String[] args) 
+{
+        
+// Creating a StringBuffer object
+        
+StringBuffer sb = new StringBuffer("Hello");
+
+        
+// Display the initial string
+        
+System.out.println("Initial string: " + sb);
+
+        
+// Append a string
+        
+sb.append(" World");
+        
+System.out.println("After append: " + sb);
+
+        
+// Insert a string at a specific index
+        
+sb.insert(5, " Java");
+        
+System.out.println("After insert: " + sb);
+
+        
+// Replace a portion of the string
+        
+sb.replace(5, 10, " Amazing");
+        
+System.out.println("After replace: " + sb);
+
+        
+// Delete a portion of the string
+        
+sb.delete(5, 13);
+        
+System.out.println("After delete: " + sb);
+
+
+// Reverse the string
+        sb.reverse();
+        
+System.out.println("After reverse: " + sb);
+
+        
+// Capacity of the StringBuffer
+        
+System.out.println("Capacity: " + sb.capacity());
+
+        
+// Length of the StringBuffer
+        
+System.out.println("Length: " + sb.length());
+
+        
+// Set the length of the StringBuffer
+        
+sb.setLength(5);
+        
+System.out.println("After setting length: " + sb);
+    
+}
+
+}
+==============Output====
+StringBufferExample
+
+Initial string: 
+Hello
+After append: Hello World
+
+After insert: Hello Java World
+
+After replace: Hello Amazing World
+
+After delete: Hello World
+
+After reverse: dlroW olleH
+
+Capacity: 21
+
+Length: 11
+
+After setting length: dlroW
+
