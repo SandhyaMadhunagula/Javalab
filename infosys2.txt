@@ -1,0 +1,88 @@
+public class Demo {
+	public static void main(String[] args) {
+		int sum = 0;
+		for (int i = 0, j = 0; i < 5 & j < 5; ++i, j = i + 1) {
+			sum += i;
+		}
+		System.out.println(sum);
+	}
+}
+java -cp /tmp/51AvKEoHKS/Demo
+6
+
+=== Code Execution Successful ===
+----------------->
+public class Demo {
+	public static void main(String[] args) {
+		int i = 1, j = 10;
+		do {
+			j--;
+		} while (++i < 5);
+		System.out.println("i = " + i + " and j = " + j);
+	}
+}
+ 
+java -cp /tmp/35GqMo5Pv0/Demo
+i = 5 and j = 6
+
+=== Code Execution Successful ===
+------------------->
+public class Demo {
+	public static void main(String[] args) {
+		for (int i = 0; i < 3; i++) {
+			switch (i) {
+			case 0:
+			case 1:
+				System.out.println("One ");
+				break;
+			case 2:
+				System.out.println("Two ");
+			}
+		}
+	}
+}
+java -cp /tmp/jEZiuGB8Ia/Demo
+One 
+One 
+Two 
+
+=== Code Execution Successful ===
+------------.
+public class Demo {
+	public static void main(String[] args) {
+		int counter = 0;
+		while (counter <= 7) {
+			if (counter % 2 == 0) {
+				counter += 1;
+				continue;
+			} else {
+				counter += 1;
+			}
+			System.out.println(counter);
+		}
+	}
+}
+java -cp /tmp/PWDkU8HDdK/Demo
+2
+4
+6
+8
+
+=== Code Execution Successful ===
+------------------------------------>
+public class Demo {
+	public static void main(String[] args) {
+		int num1 = 0;
+		int num2 = 0;
+		for (int i = 0; i < 5; i++) {
+			if ((++num1 > 2) && (++num2 > 2)) {
+				num1++;
+			}
+		}
+		System.out.println(num1 + " and " + num2);
+	}
+}
+java -cp /tmp/VBx47xItb0/Demo
+6 and 3
+
+=== Code Execution Successful ===
