@@ -1,0 +1,354 @@
+//1.What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int num1 = 20;
+		double num2 = 0;
+		if (num1 >= 20)
+			num2 = 1.5;
+		if (num1 < 30)
+			num2 = 2;
+		System.out.println("Value of num2 is " + num2);
+	}
+}
+ 
+--------------------------->
+//2.What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int num1 = 25;
+		int num2 = 34;
+		if (num1 / 3 >= num2 / 4) {
+			num1 = num1 + 1;
+
+		} else {
+			num2 = num2 + 1;
+		}
+		System.out.println(num1 + "," + num2);
+	}
+}
+ 
+
+25,35
+25,34
+26,34 
+26,36
+------------------>
+//3.What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int a = 12 * 3 - 9 / 2;
+		int b = 14 * 4 + 175 / 8;
+		if (a++ % 2 == 0) {
+			if (b-- % 4 == 0) {
+				System.out.println("a = " + a + " b = " + b);
+			} else {
+				System.out.println("a = " + a + " b = " + b);
+			}
+		} else {
+			System.out.println("a = " + a + " b = " + --b);
+		}
+	}
+}
+ --------------->
+//What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int a = 12 * 3 - 9 / 2;
+		int b = 14 * 4 + 175 / 8;
+		if (a++ % 2 == 0) {
+			if (b-- % 4 == 0) {
+				System.out.println("a = " + a + " b = " + b);
+			} else {
+				System.out.println("a = " + a + " b = " + b);
+			}
+		} else {
+			System.out.println("a = " + a + " b = " + --b);
+		}
+	}
+}
+ ---------------------->
+//What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int num1 = 100;
+		int num2 = 200;
+		int num3 = 6;
+		if (5 >= num3) {
+			if (num1 > 100 || num2 > 150) {
+				System.out.println("1");
+			}
+		} else if (num1 >= 100 && num2 > 150) {
+			System.out.println("2");
+		} else {
+			System.out.println("3");
+		}
+	}
+}
+ -------------------->
+//What should be the value of num1 and num2 to get the output as 2?
+
+public class Demo {
+	public static void main(String[] args) {
+		int num1;
+		int num2;
+		if ((num1 / num2 == 5) && (num1 + num2) > 5) {
+			System.out.println("1");
+		} else if ((num1 - num2) >= 1 || (num1 % num2) == 0) {
+			System.out.println("2");
+		} else {
+			System.out.println("3");
+		}
+	}
+}
+ ----------->
+//What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int a = -10;
+		int b = -200;
+		int c = 2000;
+		int d = 4000;
+		if (a * b >= d) {
+			if (d > c) {
+				if (d % c != 0) {
+					System.out.println(11);
+				} else {
+					System.out.println(22);
+				}
+			}
+		} else {
+			if (b / a > 0) {
+				if (a < b || d % c != 0) {
+					System.out.println(33);
+				} else {
+					System.out.println(44);
+				}
+			}
+		}
+	}
+}
+ 
+
+11
+33
+44
+22
+Q8 of 14
+
+What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int i = -1, j = -1;
+		switch (i) {
+		case -1:
+			j = 1;
+		case 2:
+			j = 2;
+			break;
+		default:
+			j = 0;
+		}
+		System.out.println("j = " + j);
+	}
+}
+ 
+
+j = 2
+j = 1
+j = 0
+Compilation Error due to absence of break in first case block
+Q9 of 14
+
+Choose the correct option based on the code snippet given below.
+
+public class Demo {
+	public static void main(String[] args) {
+		float f = 12;
+		switch (f) { // Line 1
+		case 10 + 1: // Line 2
+			System.out.println("Twelve");
+		case 0: // Line 3
+			System.out.println("Zero");
+		case (int) 12.0:
+			System.out.println("Decimal");
+		default:
+			System.out.println("Default");
+		}
+	}
+}
+ 
+
+Compiles successfully without any error
+Compilation error in Line 3 “Cannot use 0 in case”
+Compilation error in Line 2 “Cannot use operator in case”
+Compilation error in Line 1 “Cannot use float type in switch”
+Q10 of 14
+
+What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		double i;
+		char j = 'b';
+
+		switch (j) {
+		case 'a':
+		case 'A':
+			i = 7.5;
+			break;
+		case 'b':
+		case 'B':
+			i = 5.5;
+			break;
+
+		case 'c':
+		case 'C':
+			i = 2.5;
+			break;
+
+		default:
+			i = 0.5;
+		}
+		System.out.println(i);
+	}
+}
+ 
+
+Compilation error as each case block must have at least one statement
+Compilation error as variable i is not initialized while declaration
+0.5
+5.5
+Q11 of 14
+
+What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int k = 1;
+		switch (k) {
+		default:
+			System.out.println("Hello");
+		case 1:
+			System.out.println("Welcome");
+		case 2:
+			System.out.println("To");
+		case 3:
+			System.out.println("Infosys");
+			break;
+		}
+	}
+}
+ 
+
+Hello
+Welcome
+Welcome To Infosys
+Compilation error as default must be the last case in the switch block
+Q12 of 14
+
+What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int k = 2;
+		switch (k) {
+		case 'a':
+			System.out.println("Welcome");
+		case 2:
+			System.out.println("To");
+		case 'b':
+			System.out.println("Infosys");
+			break;
+		default:
+			System.out.println("Hello");
+		}
+	}
+}
+ 
+
+Welcome To Infosys Hello
+To Infosys
+To
+Hello
+Q13 of 14
+
+What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int k = 1;
+		switch (k) {
+		default:
+			System.out.println("Have");
+		case 'a':
+			System.out.println("A");
+		case 'b':
+			System.out.println("Good Day");
+		}
+	}
+}
+ 
+
+Have A
+Compilation error due to datatype mismatch
+Have
+Have A Good Day
+Q14 of 14
+
+What will be the output of the below program?
+
+public class Demo {
+	public static void main(String[] args) {
+		int i = 1;
+		int j = 0;
+		switch (i) {
+		case 1:
+			j = j + 2;
+		case 2:
+			++j;
+			break;
+		case 3:
+			j++;
+		default:
+			j = 5;
+			break;
+		}
+		System.out.println(j);
+	}
+}
+ 
+
+3
+5
+4
+2
+---------------------------->
+//Problem Statement
+//Implement a program to find and display the maximum number out of the given three numbers.
+class Tester {
+	public static void main(String[] args) {
+		// Implement your code here 
+		int num1=3,num2=4,num3=1;
+		if(num1>num2&&num1>num3)
+		{
+		System.out.println(num1);
+		}
+		else if(num2>num3)
+		{
+		    System.out.println(num2);
+		}
+		else
+		{
+		    System.out.println(num3);
+		}
+	}
+}
+
+----------------------->
