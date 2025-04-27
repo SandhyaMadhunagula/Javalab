@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main
+{
+	public static void main (String[] args)
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int nar[] = new int[3];
+		for(int i=0;i<3;i++){
+		    nar[i]=sc.nextInt();
+		}
+		
+		    if(nar[0]<nar[1] && nar[1]<nar[2]){
+		        System.out.println("Increasing");
+		    }else if(nar[0]>nar[1] && nar[1]>nar[2]){
+		        System.out.println("Decreasing");
+		} else {
+		    System.out.println("Neither");
+		      }
+		 sc.close();
+
+	}
+}
